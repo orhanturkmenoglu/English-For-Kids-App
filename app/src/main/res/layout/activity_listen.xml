@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#70d6ff"
+    tools:context=".Listen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/imgGeri"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back"
+         ></ImageView>
+        <TextView
+            android:id="@+id/tvZaman"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="Süre:60"
+            android:textSize="21dp"
+            android:fontFamily="@font/boogaloo_regular"
+            android:textColor="#0c0c0c"
+            android:layout_centerInParent="true">
+        </TextView>
+        <TextView
+            android:id="@+id/tvSayac"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="/15"
+            android:textSize="21sp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/boogaloo_regular"
+            android:textColor="#0c0c0c"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:layout_marginTop="80dp">
+        <ImageView
+            android:id="@+id/imgMusic"
+            android:clickable="true"
+            android:onClick="onSpeakClick"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/megaphone"
+           ></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imgCevap1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                android:padding="15sp"
+                android:scaleType="centerInside"
+                android:background="@drawable/bg_button_cevap">
+
+            </ImageButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/imgCevap2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                android:padding="15sp"
+                android:scaleType="centerInside"
+                android:background="@drawable/bg_button_cevap">
+
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imgCevap3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                android:padding="15sp"
+                android:scaleType="centerInside"
+                android:background="@drawable/bg_button_cevap">
+
+            </ImageButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/imgCevap4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:clickable="true"
+                android:onClick="onButtonClick"
+                android:padding="15sp"
+                android:scaleType="centerInside"
+                android:background="@drawable/bg_button_cevap">
+
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

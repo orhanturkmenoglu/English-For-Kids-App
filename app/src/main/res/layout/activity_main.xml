@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#70d6ff"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_star">
+        </ImageView>
+        <ImageView
+            android:id="@+id/imgİnfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/info">
+        </ImageView>
+        <ImageView
+            android:id="@+id/imgOwl"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/owl">
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/lnrAlphabet"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg_menu_selector"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_menu_abcdd"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Alphabet"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:textColor="#0c0c0c"
+                    android:textSize="25dp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnrNumbers"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg_menu_selector"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_bg_tables"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Numbers"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:textColor="#0c0c0c"
+                    android:textSize="25dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/lnrColours"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg_menu_selector"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_colors_menu"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:text="Colours"
+                    android:textColor="#0c0c0c"
+                    android:textSize="25dp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnrAnimals"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg_menu_selector"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_menu_animal"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:textColor="#0c0c0c"
+                    android:text="Animals"
+                    android:textSize="25dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/lnrFruits"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg_menu_selector"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_menu_fruit"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:textColor="#0c0c0c"
+                    android:text="Fruits"
+                    android:textSize="25dp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnrVegetables"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg_menu_selector"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_menu_vegetable"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:textColor="#0c0c0c"
+                    android:text="Vegetables"
+                    android:textSize="25dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

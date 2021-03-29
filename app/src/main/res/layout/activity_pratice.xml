@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pratice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ALPHABET"
+            android:background="@drawable/bg_top_menu"
+            android:textSize="30dp"
+            android:fontFamily="@font/boogaloo_regular"
+            android:textColor="#ffffff"
+            android:gravity="center"></TextView>
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:clickable="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/tvSayac"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:text="0/26"
+            android:fontFamily="@font/boogaloo_regular"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:textSize="25dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="35dp"
+        android:background="#d7263d"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/imgOgrenme"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvOkunus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A"
+            android:textColor="#d7263d"
+            android:fontFamily="@font/boogaloo_regular"
+            android:gravity="center"
+            android:textSize="35dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:clickable="true"
+            android:onClick="onPreviousClick"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/left"/>
+        <ImageView
+            android:id="@+id/imgOynat"
+            android:clickable="true"
+            android:onClick="onSpeakClick"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_next"/>
+        <ImageView
+            android:id="@+id/imgIleri"
+            android:clickable="true"
+            android:onClick="onNextClick"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
